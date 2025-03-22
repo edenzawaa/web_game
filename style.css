@@ -1,0 +1,37 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8c4fd; /* Light blue background */
+    color: #333; /* Dark gray text */
+    text-align: center; /* Center the text */
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    font-size: 18px;
+    margin: 20px auto;
+  }
+  button {
+    background-color: #e672c9; /* Blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    border : 1px solid rgb(143, 10, 125);
+    border-radius: 20px;
+
+  }
+  button:hover {
+    background-color: #faa2e4; /* Darker blue on hover */
+  } 
+  button:active {
+    background-color: #f54e65; /* Even darker blue when clicked */
+  }
+  img{
+    border : 1px solid rgb(114, 7, 100);
+    border-radius: 20px;
+  }
