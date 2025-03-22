@@ -225,13 +225,13 @@ document.getElementById('btn').addEventListener('click', () => {
                               createParagraph('Oh um, well i guess you can keep it then');
                               createParagraph('dont do anything weird with it tho..');
                               createButton('mainSub1','Okayyy');
-                              mainsub1.addEventListener('click',()=> {
+                              mainSub1.addEventListener('click',()=> {
                                 clearBody();
                                 createParagraph('I paid you with ton of kisses and we went inside to watch a movie');
                                 createParagraph('The end');
                               });
                               createButton('mainSub2','hehe :p');
-                              mainsub2.addEventListener('click',()=> {
+                              mainSub2.addEventListener('click',()=> {
                                 clearBody();
                                 createParagraph('I paid you with ton of kisses and we went inside to watch a movie');
                                 createParagraph('The end');
