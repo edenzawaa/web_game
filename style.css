@@ -7,6 +7,14 @@ body {
     margin: 0;
     padding: 0;
   }
+
+  input[type="text"]{
+    height: 30px;
+    border: solid 2px ;
+    border-radius: 20px;
+    margin-left:10px;
+    padding-left: 10px;
+  }
   p {
     font-size: 18px;
     margin: 20px auto;
@@ -21,7 +29,7 @@ body {
     font-size: 16px;
     margin: 10px;
     transition: background-color 0.3s ease;
-    border : 1px solid rgb(143, 10, 125);
+    border : 2px solid rgb(143, 10, 125);
     border-radius: 20px;
 
   }
@@ -31,7 +39,83 @@ body {
   button:active {
     background-color: #f54e65; /* Even darker blue when clicked */
   }
-  img{
-    border : 1px solid rgb(114, 7, 100);
-    border-radius: 20px;
+.container {
+  width: 1600px;
+  height: 900px;
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: aliceblue;
+  position: relative;
+  border: solid 2px rgb(143, 7, 100);
+  border-radius: 10px;
+}
+.middle-ground{
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  background-image: url(./resources/middleground.png);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  position: absolute;
+  overflow: hidden;
+
+}
+.background{
+  image-rendering: pixelated;
+  background-image: url(./resources/background.png);
+  width: 100%;
+  height: 100%;
+
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: 1;
+}
+.animation-container{
+  width: calc(32px*var(--spriteSize));
+  height: calc(32px*var(--spriteSize));
+  overflow: hidden;
+}
+:root{
+  --spriteSize: 2; 
+}
+.spriteSheet{
+  image-rendering: pixelated;
+  height: calc(32px*var(--spriteSize));
+  animation: myAnimation 0.8s steps(8) infinite;
+}
+@keyframes myAnimation {
+  from{
+    transform: translate(0, 0);
   }
+  to{
+    transform: translate(-100%, 0);
+  }
+}
+
+@keyframes animatedBackground {
+  from {
+    transform:translate(0, 0);
+  }
+  to {
+    
+    transform:translate(-100%, 0);
+  }
+}
+.spriteSheet2{
+  image-rendering: pixelated;
+  height: calc(32px*var(--spriteSize));
+  animation: myAnimation 0.8s steps(9) infinite;
+}
+canvas{
+  image-rendering: pixelated;
+  z-index: 3;
+  position: absolute;
+}
