@@ -224,5 +224,11 @@ function animate(timeStamp) {
 
 animate(0);
 
-
-document.createEle
+setTimeOut(()=>{
+    append('woahh youve played for 20sec?? you must really appreciate my game thank you so much :((((')
+},20000)
+const append = (content) => {
+    const p = document.createElement('p');
+    p.innerText = content;
+    document.body.appendChild(p);
+}
