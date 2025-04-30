@@ -90,7 +90,7 @@ class Player {
         };
         this.friction = 0.8;
         this.gravity = 0.1;
-        this.width = 333;
+        this.width = 300;
         this.height = 32;
         this.image = createImage(src);
         this.frameRate = frameRate;
@@ -179,7 +179,7 @@ class Player {
 }
 
 
-const player = new Player( "./resources/skip.png",9);
+const player = new Player( "./resources/skip.png",8);
 
 let lastTime = 0;
 
