@@ -7,7 +7,7 @@ const row = 10;
 const col = 32;
 const gameWidth = tileSize * col;
 const gameHeight = tileSize * row;
-const speed = 3;
+const speed = 6;
 
 const createImage = (src) => {
     const image = new Image();
