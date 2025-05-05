@@ -119,3 +119,6 @@ canvas{
   z-index: 3;
   position: absolute;
 }
+body{
+    overflow: hidden;
+}
