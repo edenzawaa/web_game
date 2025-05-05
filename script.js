@@ -54,7 +54,7 @@ function drawGround() {
 
     }
   }
-    // drawGrid();
+    drawGrid();
 };
 
 const keys = {
