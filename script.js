@@ -7,7 +7,7 @@ const row = 10;
 const col = 32;
 const gameWidth = tileSize * col;
 const gameHeight = tileSize * row;
-const speed = 6;
+const speed = 3;
 
 const createImage = (src) => {
     const image = new Image();
@@ -54,7 +54,7 @@ function drawGround() {
 
     }
   }
-    drawGrid();
+    // drawGrid();
 };
 
 const keys = {
